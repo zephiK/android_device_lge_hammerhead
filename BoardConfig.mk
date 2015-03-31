@@ -134,11 +134,13 @@ BOARD_SEPOLICY_UNION += \
        thermald.te \
        time.te \
        ueventd.te \
+       untrusted_app.te \
        vss.te \
+       vold.te \
        wpa.te \
        file_contexts \
        genfs_contexts \
-       te_macros
+       te_macros 
 
 HAVE_ADRENO_SOURCE:= false
 

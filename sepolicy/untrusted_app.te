@@ -1,0 +1,3 @@
+#needed for qcom time service
+allow untrusted_app time:unix_stream_socket connectto;
+
