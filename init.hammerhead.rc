@@ -206,7 +206,8 @@ on post-fs-data
     write /sys/devices/system/cpu/cpufreq/conservative/up_threshold 90
     write /sys/devices/system/cpu/cpufreq/conservative/freq_step 10
     write /sys/devices/system/cpu/cpufreq/conservative/down_threshold 40
-    write /sys/devices/system/cpu/cpufreq/conservative/input_boost_freq 2265600    
+    write /sys/devices/system/cpu/cpufreq/conservative/input_boost_freq 2265600  
+    restorecon_recursive /sys/devices/system/cpu/cpufreq/ondemand
     write /sys/kernel/mm/ksm/sleep_millisecs 1500
     write /sys/kernel/mm/ksm/pages_to_scan 256
     write /sys/kernel/mm/ksm/deferred_timer 1
